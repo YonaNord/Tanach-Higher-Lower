@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanach Higher Lower</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/doron.png">
+</head>
+<body>
+    <section id="container" class="container">
+        <div class="left-half"  id="left-half">
+          <article>
+            <h1 class="nameTitle" id="leftNameTitle">NULL</h1>
+            <p class="hasTitle" id="leftHasTitle">has</p>
+            <h1 class="countTitle" id="leftCountTitle">0</h1>
+            <p class="hasTitle" id="leftHasTitle2">Biblical appearances</p>
+          </article>
+        </div>
+        <div class="right-half" id="right-half">
+          <article>
+            <h1 class="nameTitle" id="rightNameTitle">NULL</h1>
+            <p class="hasTitle" id="rightHasTitle">has</p>
+            <div><button class="higherLowerButton clickHigherLowerButton" id="rightHigherButton"><span class="clickHigherLowerButton" id="Higher">Higher</span><img id="Higher" class="clickHigherLowerButton" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAAAXNSR0IArs4c6QAAASpJREFUSA1j+P//fygQPwfiE0AcwkArADT8JhAjgx1AjjLV7QMa+g/ZFij7O5CuBWJ2qlmIxRJkIZBvnaliGbKpeNhLgHLiFFmIx3B0qfdAgUwgZiLLQnTTiOCfAqoxItkyIgzGpuQPUHAiEPMRbSE2U0gQewpUG0aUZSQYik8p4byHTzeJcvjzHomGEaMce94jRieZapYC9cHzHiPIEKIikzxFr4Da3BkZGS/Q2iKQ8w4DLbIjL5eT4TtaWwQKujyQu2hp0TKg+Xqg+AFZxEBmisKnjebJG5Rh64AYe2WJz2kkyNG8CKJ5oUqXaoLmFR+oKs8CYvKyBJERjlJAgvMFqQQBi7DnCVItAakHWoSvAclGjplY9QAtArkaGRDOE1hNIiAItIEujXwAFKhJ5wNxOVMAAAAASUVORK5CYII=" width="25" height="25"/></button></div>
+            <div><button class="higherLowerButton clickHigherLowerButton" id="rightLowerButton"><span class="clickHigherLowerButton" id="Lower">Lower</span><img id="Lower" class="clickHigherLowerButton" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAAAXNSR0IArs4c6QAAASpJREFUSA1j+P//fygQPwfiE0AcwkArADT8JhAjgx1AjjLV7QMa+g/ZFij7O5CuBWJ2qlmIxRJkIZBvnaliGbKpeNhLgHLiFFmIx3B0qfdAgUwgZiLLQnTTiOCfAqoxItkyIgzGpuQPUHAiEPMRbSE2U0gQewpUG0aUZSQYik8p4byHTzeJcvjzHomGEaMce94jRieZapYC9cHzHiPIEKIikzxFr4Da3BkZGS/Q2iKQ8w4DLbIjL5eT4TtaWwQKujyQu2hp0TKg+Xqg+AFZxEBmisKnjebJG5Rh64AYe2WJz2kkyNG8CKJ5oUqXaoLmFR+oKs8CYvKyBJERjlJAgvMFqQQBi7DnCVItAakHWoSvAclGjplY9QAtArkaGRDOE1hNIiAItIEujXwAFKhJ5wNxOVMAAAAASUVORK5CYII=" width="25" height="25"/></button></div>
+            <h1 class="countTitle" id="rightCountTitle">0</h1>
+            <p class="hasTitle" id="rightHasTitle2">Biblical appearances</p>
+          </article>
+        </div>
+      <div class="third-half" id="third-half">
+        <article>
+          <h1 class="nameTitle" id="thirdNameTitle">NULL</h1>
+          <p class="hasTitle" id="thirdHasTitle">has</p>
+          <h1 class="countTitle" id="thirdCountTitle">0</h1>
+          <p class="hasTitle" id="thirdHasTitle2">Biblical appearances</p>
+          
+        </article>
+      </div>
+      <div class="circle" id="circle">VS
+        <div class="circle" id="circleR"><img src="images/v.png"  width="50%" height="50%"/></div>
+        <div class="circle circleClick" id="circleW"><img id="circleWimage" class="circleClick" src="images/x.png"  width="50%" height="50%"/></div>
+      </div>
+      <div id="scoreTitle">Score: 0</div>
+  
+      <div class="loading-screen" id="loading-screen">
+        <h1 class="loading-text" id="loading-text">Loading...</h1>
+          <div class="iconload", id="iconload">
+            <div class="colorload", id="colorload"/>
+          </div>
+      </div>
+
+
+        </section>
+    <script type="module" src="./javascripts/style.js"></script>
+    <script type="module" src="./javascripts/getImage.js"></script>
+    <script type="module" src="./javascripts/loadingScreen.js"></script>
+    <script type="module" src="./javascripts/game.js"></script>
+    <script type="module" src="./javascripts/inspect.js"></script>
+</body>
+</html>

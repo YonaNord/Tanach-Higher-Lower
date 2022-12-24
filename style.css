@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+    
+
+}
+html, body, section, div {
+    position:relative;
+    height: 100%;
+    width: 100%;
+    overflow:visible;
+    
+}
+  
+body { 
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: 1.25rem;
+    font-family: 'rooney-sans', sans-serif;
+    line-height: 150%;
+    text-align: center;
+    top: 0%;
+    margin: 0 auto;
+
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+  
+section {
+    width: 100%;
+}
+  
+article {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+  
+h1 {
+    font-size: 1.75rem;
+    margin: 0 0 0.75rem 0;
+}
+  
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, red, orange, yellow, lime, cyan, blue, indigo, violet);
+    background-size: 10000% 10000%;
+    z-index: 999999999999;
+
+    animation: bg-gradient 50s infinite;
+    
+
+    transition: opacity 1s ease-in-out;
+}
+
+@keyframes bg-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#loading-text {
+    display:block;
+    position: relative;
+    top: 40%;
+    color:rgb(240, 240, 240);
+    font-size: 120%;
+}
+
+#iconload {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 20px;
+    background: white;
+    animation: spin 2s linear infinite;
+    animation-delay: 1s;
+    transition: opacity 1s ease-in-out;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#colorload {
+
+    position: relative;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 20px;
+    background: rgb(180, 175, 175);
+    animation: spin 2s linear infinite;
+    animation-delay: 1s;
+    transition: opacity 1s ease-in-out;
+    border-radius: 20px;
+    
+}
+
+#left-half {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    float: left;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    right: 50%;
+    bottom: 0px;
+    transition: background 300ms ease-in 200ms;
+    
+}
+
+#right-half {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    float: right;
+    right: 0%; 
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0px;
+    transition: background 300ms ease-in 200ms;
+
+}
+
+#third-half {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    float: left; 
+    width: 20%;
+    background-size: cover;
+    background-position: center;
+    right: -50%;
+    bottom: 0px;
+
+}
+
+.nameTitle{
+    font-size: 50px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    padding-top: 10px;
+    
+    
+}
+
+
+.higherLowerButton
+{
+
+    position: relative;
+	margin-bottom:15px;
+    padding: 18px 40px;
+    text-align: middle;
+    background-color: transparent;
+    font-family: 'rooney-sans', sans-serif;
+    font-size: 20px;
+    color:rgb(253, 253, 115);
+    border-radius: 20px;
+    border: 4px solid white;
+    cursor: pointer;
+    font-weight: bold;
+    display:inline;
+    
+}
+
+
+.higherLowerButton img 
+{  
+    display: inline;
+    vertical-align: middle;
+    background: transparent;
+    padding: 5px;
+    border-radius: 0px;
+
+    
+}
+
+
+.higherLowerButton span
+{
+	display:inline-block;
+    width: 120px;
+    vertical-align:middle;
+    
+}
+
+#rightLowerButton img{
+    transform: rotate(90deg);
+}
+
+#rightHigherButton img{
+    transform: rotate(-90deg);
+}
+
+.countTitle{
+    font-size: 50px;
+    font-weight: 70px;
+    color:rgb(253, 253, 115);
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 100px;
+    border-radius: 20%;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    background: white;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#circle {
+    overflow: hidden;
+
+}
+
+#circleW {
+    background: red;
+    top: 150%;
+}
+#circleW img {
+    margin-top: 25%;
+}
+
+#circleR {
+    background: greenyellow;
+    top: 150%;
+}
+
+#circleR img {
+    margin-top: 25%;
+    transform: 0.4s;
+}
+
+
+#scoreTitle {
+    box-sizing: inherit;
+    position: fixed;
+    top: 30px;
+    left: 110px;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 20%;
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    white-space: nowrap;
+    transition: top 3s linear;
+}
+
+#rightCountTitle {
+    display: none;
+}
+
+#infoSource {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    line-height: 10px;
+    font-size: 13px;
+    color: lightgray;
+    text-align: center;
+    font-weight: bold;
+}
+
+#third-half {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(images/doron.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    vertical-align: middle;
+    float: right; 
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    
+}
+
